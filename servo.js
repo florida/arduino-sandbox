@@ -8,9 +8,7 @@ board.on("ready", function() {
     pin: 12,
     type: "continuous"
   });
-  setInterval(function(){
-    servo.ccw(1);
-  }, 500);
+  servo.sweep();
 });
 
 
